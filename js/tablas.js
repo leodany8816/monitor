@@ -38,6 +38,15 @@ var tablacfdis = $("#dt_cfdis").DataTable({
             "sSortDescending": ": Activar para ordenar la columna de manera descendente"
         }
     },
+<<<<<<< HEAD
+=======
+    columnDefs: [
+        {
+            //  quitar todas la flechas de ordenar ascendente y descendente
+            sortable: false
+        }
+    ],
+>>>>>>> 73f48fb (Archivo Prueba)
     dom:
         "<'row mb-3'<'col-sm-12 col-md-6 d-flex align-items-center justify-content-start'f><'col-sm-12 col-md-6 d-flex align-items-center justify-content-end'lB>>" +
         "<'row'<'col-sm-12'tr>>" +
@@ -62,6 +71,10 @@ var tablacfdis = $("#dt_cfdis").DataTable({
         { data: 'descargar' }
     ],
     "initComplete": function (settings, json) {
+<<<<<<< HEAD
         //$('#dt_basica_reporteTest_filter input').attr('placeholder', 'Buscar...');
+=======
+        $('#dt_basica_reporteTest_filter input').attr('placeholder', 'Buscar...');
+>>>>>>> 73f48fb (Archivo Prueba)
     }
 });

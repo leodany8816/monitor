@@ -66,7 +66,10 @@ $(document).ready(function () {
       // },
       success: function(msg){
         console.log('nombrezip->'+msg);
+<<<<<<< HEAD
         window.location.href='archivos/'+msg;
+=======
+>>>>>>> 73f48fb (Archivo Prueba)
       },
       error:function(xhr){
         alert('Error al descargar el archivo zip');

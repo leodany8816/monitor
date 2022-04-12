@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="es">
+=======
+<html lang="en">
+>>>>>>> 73f48fb (Archivo Prueba)
 
 <head>
     <meta charset="UTF-8">

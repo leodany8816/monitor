@@ -26,7 +26,11 @@ if ($zip->open($nameZip, ZipArchive::CREATE) === true) {
     $resultado = $zip->close();
     copy($nameZip,"../archivos/".$nameZip);
     if ($resultado) {
+<<<<<<< HEAD
         echo $nameZip;
+=======
+        echo "Archivo creado->".$nameZip;
+>>>>>>> 73f48fb (Archivo Prueba)
     } else {
         echo "Error creando archivo.>".$nameZip;
     }

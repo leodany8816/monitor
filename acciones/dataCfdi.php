@@ -24,7 +24,11 @@ foreach ($cfdis as $cfdi) {
         "tipo_comprobante" => $tipo,
         "subTotal" => number_format($cfdi["comprobante_SubTotal"],2),
         "total" => number_format($cfdi["comprobante_Total"],2),
+<<<<<<< HEAD
         "ver" => '<a href="'.$path_pdf.$emisor."/".$ruta[0]."/".$ruta[1]."/".$ruta[2]."/".$cfdi['nombre_pdf'].'" target="_blank" title="hola"><img src="css/img/pdf_icon.png" /></a>',
+=======
+        "ver" => '<a href="'.$path_file.$emisor."/".$ruta[0]."/".$ruta[1]."/".$ruta[2]."/".$cfdi['nombre_pdf'].'" target="_blank"><img src="css/img/pdf_icon.png" /></a>',
+>>>>>>> 73f48fb (Archivo Prueba)
         "descargar" =>'<img id='.$cfdi['id_factura'].' class="descargarZip" src="css/img/zip_icon.png" />'
     );
 }

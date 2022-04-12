@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 session_start(0);
+=======
+session_start();
+>>>>>>> 73f48fb (Archivo Prueba)
 include('funciones.php');
 $actual = basename($_SERVER['PHP_SELF']);
 if (empty($_SESSION["usuario_empresa"]) && empty($_SESSION["usuario_id"])) {
@@ -11,6 +15,7 @@ $id_empresa =  $_SESSION["id_empresa"];
 
 $empresa = informacion_registro_query("select * from empresas where id_empresa=" . $id_empresa);
 $nomEmpresa = $empresa['nombre'];
+<<<<<<< HEAD
 if (!empty($empresa['logo']))
     $logo = $empresa['logo'];
 else
@@ -18,6 +23,12 @@ else
 ?>
 <!DOCTYPE html>
 <html lang="es">
+=======
+$logo = $empresa['logo'];
+?>
+<!DOCTYPE html>
+<html lang="en">
+>>>>>>> 73f48fb (Archivo Prueba)
 
 <head>
     <meta charset="UTF-8">
@@ -28,8 +39,12 @@ else
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" media="screen, print" href="css/vendors.bundle.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<<<<<<< HEAD
     <link href="//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
     <!-- <link href="css/datagrid/datatables/datatables.bundle.css" rel="stylesheet">-->
+=======
+    <link href="css/datagrid/datatables/datatables.bundle.css" rel="stylesheet">
+>>>>>>> 73f48fb (Archivo Prueba)
 
 <body id="page-top">
     <!-- Page Wrapper -->
