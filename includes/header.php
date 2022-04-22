@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_start(0);
 include('funciones.php');
 $actual = basename($_SERVER['PHP_SELF']);
 if (empty($_SESSION["usuario_empresa"]) && empty($_SESSION["usuario_id"])) {
@@ -11,10 +11,13 @@ $id_empresa =  $_SESSION["id_empresa"];
 
 $empresa = informacion_registro_query("select * from empresas where id_empresa=" . $id_empresa);
 $nomEmpresa = $empresa['nombre'];
-$logo = $empresa['logo'];
+if (!empty($empresa['logo']))
+    $logo = $empresa['logo'];
+else
+    $logo = 'logogen.jpg';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +28,8 @@ $logo = $empresa['logo'];
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" media="screen, print" href="css/vendors.bundle.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link href="css/datagrid/datatables/datatables.bundle.css" rel="stylesheet">
+    <link href="//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
+    <!-- <link href="css/datagrid/datatables/datatables.bundle.css" rel="stylesheet">-->
 
 <body id="page-top">
     <!-- Page Wrapper -->

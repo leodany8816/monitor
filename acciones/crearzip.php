@@ -26,7 +26,7 @@ if ($zip->open($nameZip, ZipArchive::CREATE) === true) {
     $resultado = $zip->close();
     copy($nameZip,"../archivos/".$nameZip);
     if ($resultado) {
-        echo "Archivo creado->".$nameZip;
+        echo $nameZip;
     } else {
         echo "Error creando archivo.>".$nameZip;
     }

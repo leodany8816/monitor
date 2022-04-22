@@ -15,7 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="js/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="js/vendor/datatables/datatables.bundle.js"></script>
-<script src="js/vendor/datatables/datatables.export.js"></script>
+<script src="js/vendor/datatables/datatables.export.js"></script> 
+<!-- <script src="//cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script> -->
 <script src="js/tablas.js"></script>
 <script src="js/scripts.js"></script>
 </body>

@@ -66,6 +66,7 @@ $(document).ready(function () {
       // },
       success: function(msg){
         console.log('nombrezip->'+msg);
+        window.location.href='archivos/'+msg;
       },
       error:function(xhr){
         alert('Error al descargar el archivo zip');

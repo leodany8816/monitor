@@ -1,18 +1,29 @@
 <?php
   // BD
-  $usuario = "root";
-  $base = "monitor_cfdi";
-  $contrasena = "";
+  // local
+  // $usuario = "root";
+  // $base = "monitor_cfdi";
+  // $contrasena = "";
+
+  // Server
+  $usuario = "intoit_monitor";
+  $base = "intoit_monitor_cfdi";
+  $contrasena = "lu=GZNOFBi3E";
+
   global $dbcon;
   $dbcon = new mysqli("localhost",$usuario,$contrasena,$base) OR die ("Error al conectar con la base de datos");  
   mysqli_set_charset($dbcon, 'utf8');    
   date_default_timezone_set("America/Mexico_City");
   //Paths locales
-  //$path_app = "http://".$_SERVER['HTTP_HOST']."/i-vinculacion/upv/";  //ruta micrositio
-  //$path_appg = "http://".$_SERVER['HTTP_HOST']."/i-vinculacion/"; //ruta global
+  // $path_file = "C:/xampp/htdocs/monitor/cfdi/"; 
+  // $path_file2 = "C:/xampp/htdocs//monitor_web/archivos/"; 
+  // $path_pdf = "http://".$_SERVER['HTTP_HOST']."/monitor/cfdi/";
+
   //Paths remotas
-  $path_file = "C:/xampp/htdocs/monitor/cfdi/"; 
-  $path_file2 = "C:/xampp/htdocs//monitor_web/archivos/"; 
+  //echo "ruta->".__DIR__;
+  $path_file = "/home/intoit/public_html/monitor/cfdi/"; 
+  $path_file2 = "/home/intoit/public_html/monitor_web/archivos/"; 
+  $path_pdf = "http://".$_SERVER['HTTP_HOST']."/monitor/cfdi/";
 
 
 ?>
